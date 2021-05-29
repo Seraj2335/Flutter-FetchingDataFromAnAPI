@@ -72,7 +72,9 @@ class _FetchDataAppState extends State<FetchDataApp> {
                       ],
                     ),
                   );
-                });
+                }
+                      itemCount:snapshot.data!.length
+                   );
               }
               return Center(child: CircularProgressIndicator());
             }),
@@ -81,72 +83,4 @@ class _FetchDataAppState extends State<FetchDataApp> {
   }
 }
 
-/*class MyApp extends StatelessWidget {
-  const MyApp({
-    Key? key,
-  }) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-        home: Scaffold(
-      backgroundColor: Color.fromRGBO(205, 223, 233, 1),
-      body: ListView(children: [
-        Container(
-            padding: EdgeInsets.only(top: 48),
-            child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  Image(
-                    width: 100,
-                    height: 100,
-                    image: AssetImage('assets/image12.jpg'),
-                  ),
-                  Container(
-                    padding: EdgeInsets.only(left: 130),
-                    child: Text(
-                      'Md. Imran Khan',
-                      style: TextStyle(color: Colors.black),
-                    ),
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  RichText(
-                      textAlign: TextAlign.center,
-                      text: TextSpan(
-                          text: 'BHARAT SHAADI CARDS',
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 24,
-                              fontWeight: FontWeight.bold))),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  RichText(
-                      textAlign: TextAlign.center,
-                      text: TextSpan(
-                          text: 'MADHUBENIYA CHAURAHA ',
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold))),
-                  SizedBox(
-                    height: 15,
-                  ),
-                  ElevatedButton(
-                      onPressed: () {
-                        showModalBottomSheet(
-                            context: context,
-                            builder: (context) => Container());
-                      },
-                      child: Container(
-                        child: Column(
-                          children: [],
-                        ),
-                      ))
-                ])),
-      ]),
-    ));
-  }
-}
-*/
