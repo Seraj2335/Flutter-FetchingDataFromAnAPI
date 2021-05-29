@@ -1,6 +1,20 @@
+
+
+
+
+
+
+
 # fetchdataapp
 
 A new Flutter project.
+
+
+
+# Description
+
+This is a simple app which fetches data from a fake API
+
 
 ## Getting Started
 
