@@ -72,7 +72,7 @@ class _FetchDataAppState extends State<FetchDataApp> {
                       ],
                     ),
                   );
-                }
+                },
                       itemCount:snapshot.data!.length
                    );
               }
